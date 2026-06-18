@@ -1,0 +1,48 @@
+name: Bug report
+description: Something isn't working the way it should.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to file a report. Please fill out what you can.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what actually happened?
+      placeholder: Describe the bug clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: How can someone else see the same thing?
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See error
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: App or release version, if known.
+    validations:
+      required: false
+  - type: input
+    id: os
+    attributes:
+      label: OS / environment
+      placeholder: e.g. Windows 11
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: Paste any relevant output. Do not include passwords, tokens, or personal info.
+    validations:
+      required: false
